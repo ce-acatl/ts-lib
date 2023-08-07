@@ -1,0 +1,26 @@
+pipeline {
+  agent any
+ 
+  tools {nodejs "node"}
+ 
+  stages {
+    // stage('Cloning Git') {
+    //   steps {
+    //     //git 'https://github.com/ce-acatl/ts-lib.git'
+    //     git branch: 'Dev', changelog: false, credentialsId: '85b370b5-19bf-492b-8fef-7c89445ec3a9', poll: false, url: 'https://github.com/ce-acatl/ts-lib.git'
+    //   }
+    // }
+        
+    stage('Install dependencies') {
+      steps {
+        sh 'npm install'
+      }
+    }
+     
+    stage('Test') {
+      steps {
+         sh 'npm test'
+      }
+    }      
+  }
+}
