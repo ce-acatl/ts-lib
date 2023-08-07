@@ -1,0 +1,29 @@
+{
+  "name": "calidad-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "OrdersUtil.ts",
+  "scripts": {
+    "test": "ts-node node_modules/jasmine/bin/jasmine"
+  },
+  "keywords": [],
+  "author": "Edgardo Ce-acatl Robledo Parra",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^4.3.5",
+    "@types/lodash": "^4.14.196",
+    "@types/node": "^20.4.8",
+    "jasmine": "^5.1.0",
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "jasmine-ts": "^0.4.0",
+    "lodash": "^4.17.21",
+    "rxjs": "^7.8.1"
+  }
+}
